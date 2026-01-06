@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot Perceptual Calculator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; }
+        .component-card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #ddd; }
+        .result-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .result-table th, .result-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        .result-table th { background: #eee; }
+        button { cursor: pointer; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Robot ID Card Creator</h1>
+    <div id="component-list">
+        </div>
+    
+    <button onclick="addComponent()">+ Add Component</button>
+    <button onclick="calculatePerception()" style="background: #28a745; color: white;">Calculate Perceptual Limits</button>
+
+    <h2>Perceptual Range Profile</h2>
+    <table class="result-table" id="results">
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Modality</th>
+                <th>Formula Used</th>
+                <th>P-Min (Floor)</th>
+                <th>P-Comfort (Social)</th>
+                <th>X-Max (Physical)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        // JS Logic goes here
+    </script>
+</body>
+</html>
